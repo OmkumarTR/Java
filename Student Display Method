@@ -30,3 +30,10 @@ public class Student {
 		firstStudent.display();
 	}
 }
+
+... Output...
+Student id is    : 1
+Date of birth is : 20 Oct 1997
+Blood Group is   : B+
+height is        : 180
+Marks is         : 90
