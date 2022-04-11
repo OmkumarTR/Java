@@ -1,0 +1,19 @@
+package program;
+public class NumberOfLetters {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a = "Good friends";
+		char[] ab = a.toCharArray();
+		int count = 0;
+		for (int i = 0; i < ab.length; i++) {
+			if (ab[i] == ' ')
+				continue;
+			count = count + 1;
+		}
+		System.out.println(count);
+	}
+}
+
+
+...Output...
+11
