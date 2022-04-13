@@ -6,7 +6,6 @@ package com.chainsys.FirstTest;
  * 			length of the name is not less than 8 characters
  */
 import java.util.Scanner;
-
 public class CheckVariables {
 	public static void main(String[] args) {
 		CheckAlphates();
@@ -19,19 +18,28 @@ public class CheckVariables {
 
 		String nameinCase = name.toUpperCase();
 		char[] ch = nameinCase.toCharArray();
-		int lengthofch = ch.length;
+		int lengthofch =ch.length;
 		int ascii = 0;
 		for (int index = 0; index < lengthofch; index++) {
 			ascii = (int) ch[index];
 		}
-		if (lengthofch < 8) {
+		if (lengthofch < 8) 
+		{
 			System.out.println("Input must be more than 8 characters");
 			return;
 		}
-		if ((ascii > 65) && (90 < ascii)) {
-			System.out.println("Input contains Only Alphabets");
-		} else {
+		if ((ascii >= 65) || (90 <= ascii)&&(ascii>=97)||(ascii<=122)) 
+		{
+			System.out.println("Input contains Only Alphabets");	
+		} 
+		else 
+		{
 			System.out.println("Only Allow for Alphates");
 		}
 	}
 }
+
+...Output...
+Enter the input
+OmkumarTR
+Input contains Only Alphabets
