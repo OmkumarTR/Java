@@ -1,0 +1,26 @@
+package Sorting;
+/**
+ * Author - Omkumar T R
+ * Date   - 14-04-2022
+ */
+import java.util.Scanner;
+public class PerfectSquare {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter input");
+		int input = sc.nextInt();
+		sc.close();
+		for (int i = 1; i <= input / 2; i++) {
+
+			if (i * i == input) {
+				System.out.println("Perfect Square");
+			}
+
+		}
+	}
+}
+
+...Output...
+Enter input
+100
+Perfect Square
