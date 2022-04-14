@@ -23,3 +23,12 @@ public class Factorial1 {
 		}
 	}
 }
+
+...Output...
+Enter the value
+5
+5 120
+4 24
+3 6
+2 2
+1 1
