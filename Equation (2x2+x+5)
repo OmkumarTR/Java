@@ -7,7 +7,6 @@ package com.chainsys.FirstTest;
  */
 public class SolveEquation 
 {
-
 	public static void main(String[] args) 
 	{
 		solve();
