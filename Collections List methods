@@ -1,0 +1,42 @@
+/**
+ * Author - Omkumar
+ * Date   - 14-04-2022
+ */
+import java.util.ArrayList;
+public class ArrayListAddEx {
+	public static void main(String[] args) {
+		ArrayList list = new ArrayList();
+
+		list.add("Omkumar");
+		list.add("Naveen");
+		list.add("Rajendran");
+		list.add("Arivu");
+
+		System.out.println(list);
+		System.out.println(list.size());
+		System.out.println(list.set(0, "list"));
+		System.out.println(list.get(0));
+		System.out.println(list);
+		System.out.println(list.remove(0));
+		System.out.println(list);
+		System.out.println(list.remove(2));
+		System.out.println(list);
+		System.out.println(list.lastIndexOf("omk"));
+		System.out.println(list.isEmpty());
+		System.out.println(list.size());
+	}
+}
+
+...Output...
+[Omkumar, Naveen, Rajendran, Arivu]
+4
+Omkumar
+list
+[list, Naveen, Rajendran, Arivu]
+list
+[Naveen, Rajendran, Arivu]
+Arivu
+[Naveen, Rajendran]
+-1
+false
+2
