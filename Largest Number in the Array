@@ -10,7 +10,25 @@ public class LargestNumber {
 		System.out.println("largest element is ::" + largest);
 	}
 }
-
 ...Output...
 Sorted Array ::[20, 25, 63, 96, 100]
 largest element is ::100
+
+Another Method:
+/**
+ * @author PC - Omkumar Date - 15-04-2022
+ */
+public class array6 {
+	public static void main(String[] args) {
+		int[] intArray = { 24, 2, 0, 34, 12, 110, 2 };
+
+		int maximum = intArray[0];
+
+		for (int j : intArray) {
+			if (j > maximum)
+				maximum = j;
+		}
+
+		System.out.println("Maximum number = " + maximum);
+	}
+}
