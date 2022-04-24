@@ -1,9 +1,12 @@
-																					//Output:
-																				//  1  5  1  5  1  
-																				//  2  4  2  4  2  
-																				//  3  3  3  3  3  
-																				//  4  2  4  2  4  
-																				//  5  1  5  1  5  
+/**																//Output:
+ * Author - Omkumar														//  1  5  1  5  1  
+ * Date   - March 1 2022													//  2  4  2  4  2  
+																//  3  3  3  3  3  
+																//  4  2  4  2  4  
+																//  5  1  5  1  5  
+													
+ 				
+																				
 
 public class matrix {
 	public static void main(String[] args) 							
