@@ -1,0 +1,78 @@
+package com.chainsys.FirstTest;
+/*
+ * Author - Omkumar
+ * Date   - April 28 2022
+ */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+public class FileOperation {
+	public static void main(String[] args) throws IOException {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter method case");
+		int method=sc.nextInt();
+		sc.close();
+		switch(method)
+		{
+		case 1:
+			System.out.println("Create File Method");
+			createFile();
+			break;
+		case 2:
+			System.out.println("Rename File Method");
+			renameFile();
+			break;
+		case 3:
+			System.out.println("Append to File using File Writer Method");
+			AppendToFileUsingFileWriter();
+			break;
+		case 4:
+			System.out.println("Modify File Method");
+			modifyFile();
+			break;	
+		case 5:
+			System.out.println("Read Data From File method");
+			readDataFromFile();
+			break;
+		case 6:
+			System.out.println("Delete file Method");
+			deleteFile();
+			break;
+		case 7:
+			System.out.println("Copy file Method");
+			copyFile();
+			break;
+		case 8:
+			System.out.println("Move file Method");
+			moveFile();
+			break;
+		}
+	}
+	public static void createFile()
+	{
+	try {  
+    // Creating an object of a file  
+    File obj = new File("D:Omkumar.txt");   
+      if (obj.createNewFile()) {  
+      System.out.println("File " + obj.getName() + " is created successfully.");  
+      } else {  
+      System.out.println("File is already exist in the directory.");  
+      }  
+      } catch (IOException err) {  
+      System.out.println("An unexpected error is occurred.");  
+      err.printStackTrace();  
+      }   
+	}
